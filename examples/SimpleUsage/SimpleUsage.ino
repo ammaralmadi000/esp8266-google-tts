@@ -40,6 +40,7 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   TTS tts;
+  Serial.println(tts.getSpeechUrl("مرحبا", "ar"));
   Serial.println(tts.getSpeechUrl("こんにちは、世界！", "ja"));
   Serial.println(tts.getSpeechUrl("Hello, World!"));
 
